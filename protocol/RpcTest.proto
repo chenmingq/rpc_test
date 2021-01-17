@@ -1,0 +1,21 @@
+syntax = "proto3";
+option java_package = "com.github.chenmingq.rpc.common.transport.protocol";
+option java_outer_classname = "RpcTestProto";
+
+// 连接服务
+message ReqConnectServerMessage {
+  int32 port = 1;// 本机暴露的端口
+  int32 node = 2;// 本机暴露的节点id
+}
+
+// 返回注册中心的提供者地址列表
+message ResProviderAddressMessage {
+  repeated AddressBean addrList = 1; // 地址列表
+}
+
+// 地址信息
+message AddressBean {
+  string ip = 1; // ip
+  int32 port = 2; // 端口
+  int32 node = 3; // 节点id
+}
