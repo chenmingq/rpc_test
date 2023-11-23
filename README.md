@@ -40,6 +40,20 @@ mvn clean package
 ```
 
 - [demo地址](https://github.com/chenmingq/rpc_test_demo)
+- 也可以直接在本项目中运行demo
+```text
+1. 先启动 com.github.chenmingq.rpc.register.RegisterStart 注册中心
+2. 进入 demo模块  com.github.chenmingq.demo.consumer.Consumer 启动
+3. 进入 demo模块  com.github.chenmingq.demo.provider.Provider 启动 
+```
+即可测试演示使用
+- 注册中心启动
+![注册中心启动完成](img/register-start.png)
+- provider 启动
+![provider-start.png](img/provider-start.png)
+- consumer 启动
+![consumer-start.png](img/consumer-start.png)
+
 
 ###### jar只在本地nexus上传了
 
